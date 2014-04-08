@@ -27,6 +27,58 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+
+
+	<!-- Javascript
+	================================================== -->
+
+
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="../fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+<script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="../fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+<link rel="stylesheet" href="../fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	$(".fancybox").fancybox({
+    helpers : {
+        title: {
+            type: 'inside'
+        }
+    }
+});
+
+$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+
+	
+});
+</script>
+
+
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.png">
@@ -36,21 +88,7 @@
 
 </head>
 
-<!-- hover script
--->
-	  <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.3.js'></script>
-<script type='text/javascript'>
-$(document).ready(function(){
-$("img.a").hover(
-function() {
-$(this).stop().animate({"opacity": "0"}, "slow");
-},
-function() {
-$(this).stop().animate({"opacity": "1"}, "slow");
-});
 
-});
-</script>
 
 <!-- header
 	================================================== -->
@@ -77,7 +115,28 @@ $(this).stop().animate({"opacity": "1"}, "slow");
 <div class="band body">
 	<div class="container">
 <div class="sixteen columns">
-<h1>Graphic Design</h1>
+<h1>Graphic Design</h1><hr /><p>
+<div class="gallery">
+
+<a class="fancybox" href="images/graphicdesign/design.jpg" rel="graphic" title="Typography. Fall 2013."><img src="images/graphicdesign/designthumb.jpg" alt="" /></a>
+
+<a class="fancybox" href="images/graphicdesign/bookcovers.png" rel="graphic" title="Minimalist Bookcover Redeisign. Fall 2013."><img src="images/graphicdesign/pricethumb.png" alt="" /></a>
+
+<a class="fancybox" href="images/graphicdesign/gd1.jpg" rel="graphic" title="MONA - 2013<br>Art Appropriaton Project"><img src="images/graphicdesign/gd1thumb.jpg" alt="" /></a>
+<a class="fancybox" href="images/graphicdesign/gd2.jpg" rel="graphic" title="Locked Out of Heaven- 2013<br><i>Photomontage Project</i> - a compilitation of various images to create a montage that evokes a creative theme"><img src="images/graphicdesign/gd2thumb.jpg" alt="" /></a>
+
+
+<a class="fancybox" href="images/graphicdesign/gd4.jpg" rel="graphic" title="Birds on a Score - 2012"><img src="images/graphicdesign/gd4thumb.jpg" alt="" /></a>
+
+
+
+
+
+<a class="fancybox" href="images/graphicdesign/gd3.jpg" rel="graphic" title=" Puck-Man - 2012<br>type design based on a quote from Scott Pilgrim Vs. The World"><img src="images/graphicdesign/gd3thumb.jpg" alt="" /></a>
+
+<a class="fancybox" href="images/graphicdesign/gd6.jpg" rel="graphic" title=" Good Times (New Roman) - 2012<br>pun on the Times New Roman font"><img src="images/graphicdesign/gd6thumb.jpg" alt="" /></a><a class="fancybox" href="images/graphicdesign/gd5.jpg" rel="graphic" title="I Mustache You a Question - 2010"><img src="images/graphicdesign/gd5thumb.jpg" alt="" /></a>
+</div>
+</p>
 
 
 
@@ -96,7 +155,7 @@ $(this).stop().animate({"opacity": "1"}, "slow");
 © 2013 Kerrin McLaughlin All Rights Reserved
 <a href="photography.html" class="footerlink">photography</a>
 <a href="graphicdesign.html" class="footerlink">graphic design</a>
-<a href="misc.html" class="footerlink">miscellaneous</a>
+<a href="misc.html" class="footerlink">interactive media</a>
 </div>
 
 
