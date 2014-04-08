@@ -54,8 +54,28 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+    helpers : {
+        title: {
+            type: 'inside'
+        }
+    }
+});
+
+$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
 	});
+
+	
+});
 </script>
 
 
@@ -95,12 +115,30 @@
 <div class="band body">
 	<div class="container">
 <div class="sixteen columns">
-<h1>Photography</h1><p>
+<h1>Photography</h1><hr /><p>
+<subh>Digital</subh>
+<div class="gallery">
+<a class="fancybox" href="images/photography/photo1.jpg" title="Flowers to Wishes - 2011<br>Work based on Sandy Skoglund" rel="photo"><img src="images/photography/photo1thumb.jpg" alt="" /></a>
 
-<a class="fancybox" href="images/photography/photo1thumb.jpg"><img src="images/photography/photo1.jpg" alt="" /></a>
+<a class="fancybox" href="images/photography/photo3.jpg" title="What's in the Paper? - 2011<br>Work Based on Sandy Skoglund" rel="photo"><img src="images/photography/photo3thumb.jpg" alt="" /></a>
+<a class="fancybox" href="images/photography/photo4.jpg" title="I'd Choose the Spoon - 2011<br>Work based on Sandy Skoglund" rel="photo"><img src="images/photography/photo4thumb.jpg" alt="" /></a>
 
-het
+<a class="fancybox" href="images/photography/photo2.jpg" title="iStarry - 2011<br> classic artwork in the modern world" rel="photo"><img src="images/photography/photo2thumb.jpg" alt="" /></a>
 
+<a class="fancybox" href="images/photography/photo5.jpg" title="Day to Night - 2011<br>time span of tree-filled skyline from mid-afternoon to evening" rel="photo"><img src="images/photography/photo5thumb.jpg" alt="" /></a>
+
+<a class="fancybox" href="images/photography/photo7.jpg" title="Laces - 2011" rel="photo"><img src="images/photography/photo7thumb.jpg" alt="" /></a>
+
+<a class="fancybox" href="images/photography/photo8.jpg" title=" Listen To Yourself- 2011<br>conceptual diptych" rel="photo"><img src="images/photography/photo8thumb.jpg" alt="" /></a>
+
+<a class="fancybox" href="images/photography/photo9.jpg" title="Rocktych - 2011<br>conceptual diptych" rel="photo"><img src="images/photography/photo9thumb.jpg" alt="" /></a>
+
+<a class="fancybox" href="images/photography/photo10.jpg" title="Little Piano Player - 2011<br>'light painting' done in total darkness with a flashlight and camera set on bulb mode" rel="photo"><img src="images/photography/photo10thumb.jpg" alt="" /></a>
+<a class="fancybox" href="images/photography/photo11.jpg" title="Electrified - 2011<br>'light painting' done in total darkness with a flashlight and camera set on bulb mode" rel="photo"><img src="images/photography/photo11thumb.jpg" alt="" /></a>
+
+<a class="fancybox" href="images/photography/photo12.jpg" title=" Painted Puzzle - 2011" rel="photo"><img src="images/photography/photo12thumb.jpg" alt="" /></a>
+<a class="fancybox" href="images/photography/photo13.jpg" title="Crashing Colors - 2011<br>Shot of falling colored pencils with a high speed shutter speed" rel="photo"><img src="images/photography/photo13thumb.jpg" alt="" /></a>
+</div>
 </p>
 
 
@@ -120,7 +158,7 @@ het
 © 2013 Kerrin McLaughlin All Rights Reserved
 <a href="photography.html" class="footerlink">photography</a>
 <a href="graphicdesign.html" class="footerlink">graphic design</a>
-<a href="misc.html" class="footerlink">miscellaneous</a>
+<a href="misc.html" class="footerlink">interactive media</a>
 </div>
 
 

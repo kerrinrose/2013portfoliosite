@@ -2,9 +2,9 @@
 if(isset($_POST['email'])) {
      
     // CHANGE THE TWO LINES BELOW
-    $email_to = "you@yourdomain.com";
+    $email_to = "nirrek@live.com";
      
-    $email_subject = "website html form submissions";
+    $email_subject = "Contact Form";
      
      
     function died($error) {
@@ -72,7 +72,7 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- place your own success html below -->
  
-Thank you for contacting us. We will be in touch with you very soon.
+Thanks, I'll get back to you soon!
  
 <?php
 }
